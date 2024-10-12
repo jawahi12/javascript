@@ -1,0 +1,45 @@
+.pp {
+    border: 2px solid;
+    font-weight: 300;
+    color: red;
+    padding: 2px;
+    margin-top: 20px;
+}
+
+/* Flexbox container
+.box-container {
+    display: flex;
+    position: relative; Set relative positioning to contain the absolutely positioned green box 
+    margin-top: 20px;
+    gap:10px;
+    width: 100%;  Make sure the container takes the full width of the page 
+} */
+
+/* Styles for the boxes */
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+/* Different colors for each box */
+.red-box {
+    background-color: red;
+}
+
+.green-box {
+    background-color: green;
+    position: absolute; /* Position the green box absolutely */
+    right: 1000px; /* Keep it 100px away from the right edge */
+    top: 0; /* Align it at the top of the container */
+}
+
+.blue-box {
+    background-color: blue;
+    margin-right: 100px; /* Adds space between the blue and green boxes */
+}
+.grid-container {
+    display: grid;                   /* Turn the container into a grid */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    grid-gap: 20px;                  /* Space between grid items */
+    margin-top: 20px;
+}
